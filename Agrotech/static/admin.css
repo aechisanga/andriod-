@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+*{  margin: 0%;
+    padding: 0%;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+}
+::-webkit-scrollbar-thumb {
+     background:  rgb(138, 138, 138);;
+     border-radius: 50px;
+}
+::-webkit-scrollbar-track {
+     background: #ffffff; 
+}
+::selection {
+    color: rgb(24, 23, 23);
+    background: rgb(255, 251, 13);
+  }
+
+.admin-dashboard{
+    /*display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;*/
+    min-height: 100vh;
+    height: max-content;
+    background-color: #ffffff;
+    
+}
+.navbar{
+    width:98%;
+    min-height: 4vh;
+    margin: 1.8vh auto;
+    text-align: left;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.nav-welcome{
+    width: 90%;
+    
+}
+.nav-welcome h3{
+    text-align: left;
+}
+.nav-logout{
+    width: 6%;
+
+}
+.nav-logout a{
+   text-decoration: none;
+   color: #000;
+   padding: 10px 14px;
+   background-color: rgb(182, 169, 255);
+   border-radius: 5px;
+}
+.header{
+    width: 98%;
+    height: 30vh;
+    background-image: radial-gradient( circle farthest-corner at -8.9% 51.2%, #673ab7 0%, #673ab7 15.9%, rgb(139 74 255) 15.9%, #673ab7 24.4%, rgba(19,30,37,1) 24.5%, rgba(19,30,37,1) 66% );
+    margin: 2vh auto;
+    border-radius: 15px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+input[type=text],input[type=email],input[type=number],textarea {
+    width: 30%;
+    text-align: left;
+    border: none;
+    border-bottom: 2px solid #892ed4;
+}
+input[type=text]:focus,input[type=email]:focus,input[type=number]:focus,textarea:focus {
+    outline: none;
+}
+.user-search-panel{
+    display: flex;
+    width: 90%;
+    height: max-content;
+    /*min-height: 20vh;*/
+    margin: 5vh auto;
+}
+.user-search-bar{
+    margin: auto auto;
+    width: 40%;
+    border: 1px solid black;
+    min-height: 20vh;
+    border-radius: 15px;
+}
+button{
+    padding: 8px 20px;
+    background-color: #673ab7;
+    border:0px;
+    border-radius: 10px;
+    color: white;
+}
+.user-data{
+    width: 55%;
+}
+table th,td {
+    width: 150px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+.user-complaints{
+    height: max-content;
+    min-height: 30vh;
+    width: 90%;
+    margin: auto auto;
+}
+.user-complaints-panel{
+    display: flex;
+    margin:5vh auto;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.view-complaint{
+    border: 1px solid black;
+    width: 25%;
+    border-radius: 8px;
+}
+.complaint-table{
+    width: 30%;
+}
+.reply-area{
+    border: 1px solid rgb(0, 0, 0);
+    width: 28%;
+    border-radius: 7px;
+    text-align: left;
+}
+.footer{
+    min-height: 30vh;
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{  margin: 0%;
+    padding: 0%;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+    
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+}
+::-webkit-scrollbar-thumb {
+     background:  rgb(138, 138, 138);;
+     border-radius: 50px;
+}
+::-webkit-scrollbar-track {
+     background: #ffffff; 
+}
+::selection {
+    color: rgb(255, 255, 255);
+    background: rgb(147, 248, 147);
+}
+
+.navbar{
+    width:98%;
+    min-height: 4vh;
+    margin: 1vh auto;
+    text-align: left;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.nav-welcome{
+    width: 90%;
+    
+}
+.nav-welcome h3{
+    text-align: left;
+}
+.nav-logout{
+    width: 6%;
+
+}
+.nav-logout a{
+   text-decoration: none;
+   color: #000;
+   padding: 10px 14px;
+   background-color: rgb(169, 255, 190);
+   border-radius: 5px;
+}
+.header{
+    width: 98%;
+    height: 30vh;
+    /*background-image: radial-gradient( circle farthest-corner at -8.9% 51.2%,  rgba(255,124,0,1) 0%, rgba(255,124,0,1) 15.9%, rgba(255,163,77,1) 15.9%, rgba(255,163,77,1) 24.4%, rgba(19,30,37,1) 24.5%, rgba(19,30,37,1) 66% );
+    */
+    background-image: radial-gradient( circle farthest-corner at -8.9% 51.2%, rgb(97 227 102) 0%, #27c52e 15.9%, rgb(77 255 91) 15.9%, #4caf50 24.4%, rgba(19,30,37,1) 24.5%, rgba(19,30,37,1));
+    margin: 2vh auto;
+    border-radius: 15px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.dashboard-area{
+    min-height: 20vh;
+    height: max-content;
+    display: flex;
+    width: 95%;
+    margin: auto auto;
+    justify-content: space-evenly;;
+    align-items: flex-start;
+}
+input[type=text],input[type=email],input[type=number],textarea{
+    width: 40%;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #65d42e;
+}
+input[type=text]:focus,input[type=email]:focus,input[type=number]:focus,textarea:focus {
+    outline: none;
+}
+.gov-links{
+    min-height: 30vh;
+    width: 70%;
+    display: flex;
+    margin: auto auto;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.gov-links>div{
+    width: 15%;
+    height: 20vh;
+    border-radius: 15px;
+    
+}
+.gov_img{
+    width:55%;
+}
+.agri-office{
+    display: flex;
+    background-color: #ffefef;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.soil-testing{
+ 
+    display: flex;
+    background-color: #f2efff;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.ker-web{
+    display: flex;
+    background-color: #f8f8f8;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.soil-testing,.agri-office,.ker-web a{
+    font-size: 13px;
+}
+.complaint{
+    width: 30%;
+    height: 15vh;
+    background-color: #ffffff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(248, 216, 147, 0.42);
+    background-image: url(/static/images/undraw_chatting_re_j55r.svg);
+    background-position: right;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    
+}
+.gen-crop-session{
+    min-height: 70vh;
+}
+#gen-vil{
+    background-image: url(/static/images/undraw_navigation_re_wxx4.svg);
+
+}
+.gen-crop{
+    width: 30%;
+    height: 15vh;   
+    background-color: #ffffff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(47, 252, 74, 0.212);
+    background-image: url(/static/images/undraw_wishes_icyp.svg);
+    background-position: right;
+    background-size: 30%;
+    background-repeat: no-repeat;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.back{
+    text-decoration: none;
+    color: black;
+    padding: 10px 18px;
+    border-radius: 9px;
+    background-color: rgb(169, 255, 190);
+  
+}
+
+.complaint-dashboard{
+    min-height: 40vh;
+    margin: 5vh auto;
+    width:80%;
+    display: flex;
+    height: max-content;
+}
+.complaint-dashboard>div{
+    width: 33.3%;
+    min-height: 35vh;
+}
+
+textarea{
+    width: 70%;
+    text-align: left;
+    border: none;
+    border-bottom: 2px solid #2ed47b;
+}
+textarea:focus{
+    outline: none;
+}
+
+.complaint-dashboard button{
+    color: white;
+    padding: 9px 25px;
+    background-color: rgb(1, 18, 11);
+    border: .5px solid white;
+    border-radius: 7px;
+}
+.reply-space{
+    width: 50%;
+    height: max-content;
+}
+
+.reply-data h5,h4,p{
+    text-align: left;
+    
+}
+.gen-crop-recomendation{
+    min-height: 55vh;
+    margin: auto auto;
+    width: 80%;
+    height: max-content;
+    background-color: #ffffff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.gen-crop-recomendation form{
+    text-align: left;
+}
+.crop-predict{
+    min-height: 25vh;
+    width: 60%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(162, 248, 147, 0.42);
+}
+.croppredict_footer{
+    width: 100%;
+    height: 30vh;
+    background-image: url(/static/images/tempbg.png);
+    background-repeat: no-repeat;
+    margin: auto auto;
+    background-position: center;
+    background-size: cover;
+}
+
+.gen-crop-recomendation button{
+    padding: 8px 15px;
+    background-color: #27c52e;
+    border-radius: 7px;
+    border:0px solid green;
+}
+.gen-crop-result{
+    min-height: 30vh;
+    margin: 2vh auto;
+    width: 90%;
+    height: 45vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 15px;
+    align-items: center;
+    background-color: #b4feb9;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.gen-crop-result>div{
+    margin: auto;
+}
+.gen-crop-result h3,h4{
+    text-align: left;
+}
+.cropimage{
+    width: auto;
+    height: 35vh;
+    border-radius:14px;
+}
+.result-data{
+    width: 50%;
+}
+.village-page{
+    
+    height: max-content;
+}
+.village_form_div{
+    width: 40%;
+    min-height: 27vh;
+    margin: 2vh auto;
+   
+    border-radius: 15px;
+
+    background: #ffffff;
+    box-shadow:  20px 20px 60px #d9d9d9,
+             -20px -20px 60px #ffffff;
+}
+.village-button{
+    border-radius: 12px;
+    padding: 8px 25px;
+    border: 0px;
+    color: #021d24;
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #65d42e 0%, rgb(147, 248, 147) 100%)
+}

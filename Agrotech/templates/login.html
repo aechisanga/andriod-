@@ -1,0 +1,29 @@
+<title>CropiGo Login</title>
+{% include 'public_header.html' %}
+<section class="login">
+    <br><br>
+    <h1>Welcome back!</h1>
+    <br>
+    <h3 id="error_message">{{message}}</h3>
+    <br>
+    <div class="login-form">
+        <form action="" method="post">
+            <br>
+            <h3>Cropi<span style="color: #2ed47b;">Go</span> - lets farm better way</h3>
+            <br><br>
+            <label for="username">Username <input type="text" name="username" autocomplete="off"></label>
+            <br><br><br>
+            <label for="password">Password <input type="password" name="password" autocomplete="off"></label>
+            <br><br><br><br>
+            <button name="login" value="Login">Login</button><br><br>
+        </form>
+    </div>
+</section>    
+<script>
+    msg=document.getElementById("error_message").innerHTML
+    if(msg=="Error | Invalid username or password!"){
+        document.getElementById("error_message").style.color="red";
+        document.getElementById("error_message").style.fontSize="100%"
+    }
+</script>
+{% include 'footer.html' %}
